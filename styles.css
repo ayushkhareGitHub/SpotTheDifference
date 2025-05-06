@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Game Title */
+.game-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-title h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Game Controls and Info */
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.game-controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-controls button:hover {
+  background-color: #0056b3;
+}
+
+.game-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+#score, #timer, #status {
+  margin: 6px 0;
+}
+
+/* Game Container */
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
